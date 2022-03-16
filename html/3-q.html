@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 3</title>
+    <script>
+        // question 3
+        //write a fucntion that takes one parameter
+        //on the first call of this function, it remembers it
+        //on the secound call it sums the passed parameter with the parameter passed
+        //during the previous call
+        //name this function sum
+
+        //example:
+        //sum(3) //3
+        //sum(5) // 5 + 3 //8
+        //sum(228) // 8 + 228 //236
+          // ## Q3
+        // Write a function that takes 1 parameter.
+        // on the first call of this function, it remembers it.
+        // on the second call it sums the passed parameter with the parameter passed
+        // during the previous call.
+        // name this function sum
+
+        // example:
+        // sum(3) // 3
+        // sum(5) // 3 + 5 // 8
+        // sum(228) // 8 +  228 // 236
+
+        function sum(x) {
+            // first time
+            //                0  + 3 = 3
+
+            // second time
+            //           3  + 5 = 8
+
+            // third time
+            //           8 + 228 = 236
+            sum.hesham = (sum.hesham || 0) + x;
+            return sum.hesham;
+
+        }
+
+        console.log("answear to question 1:", sum(3)); // 3
+        console.log("answear to question 2:", sum(5)); // 8
+        console.log("answear to question 3:", sum(228)); // 236
+
+    </script>
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

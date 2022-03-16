@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 2</title>
+    <script>
+        //result will count calls
+        //countcalls(); 1
+        //countcalls(); 2
+        //countcalls(); 3
+        function countCalls() {
+            console.log(countCalls.currentCount)
+            //                          2
+            //                          1
+            countCalls.currentCount = (countCalls.currentCount || 0);
+            // 0
+            // ++ 0 = 1
+            // 1
+
+            // 1 + 1 = 2
+            // 2
+
+            // 1 + 2 = 3
+
+            return alert("You called" + ++countCalls.currentCount);
+        }
+
+        countCalls(); // You called  1
+        countCalls(); // You called  2
+        countCalls(); // You called  3
+        console.log(typeof countCalls);
+
+
+        countCalls = {
+            name : "",
+            age : 1
+
+        }
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
